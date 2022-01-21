@@ -1,0 +1,14 @@
+cache-path: ${env.HOME}/.config/pantheon-upstream
+working-copy-path: ${env.HOME}/pantheon/update-working-copies
+log:
+  path: ${env.HOME}/.open-source-support-report/report.log
+github:
+  default-user: open-source-support-report
+  personal-auth-token:
+    # This is a read-only token for pantheon-circleci
+    pantheon-circleci:
+      path: ${cache-path}/pantheon-circleci-token
+    me:
+      path: ${env.HOME}/.github-token
+
+projects:
